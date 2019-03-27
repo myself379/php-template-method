@@ -6,20 +6,10 @@ use App\Sub;
 
 class VeggieSub extends Sub
 {
-    public function make()
-    {
-        return $this
-            ->layBread()
-            ->addLettuce()
-            ->addVeggies()
-            ->addSauces();
-    }
-
-    public function addVeggies()
+    public function addPrimaryToppings()
     {
         var_dump('add some veggies');
 
         return $this;
     }
-    
 }
